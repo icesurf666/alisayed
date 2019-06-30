@@ -1,0 +1,227 @@
+@import "vars"
+
+// Шрифты //
+@import "fonts"
+
+// База //
+html, body
+	width: 100%
+	height: 100%
+	font-family: 'Roboto'
+h1, h2, h3, h4, h5, h6, ul, p
+	padding: 0
+	margin: 0
+ul
+	list-style: none
+\:focus, \:active
+	outline: 0 !important
+a, a:focus, a:active, a:hover
+	text-decoration: none !important
+*
+	box-sizing: border-box
+b
+	font-weight: 700
+body
+	font-weight: 400
+	font-size: 16px
+
+// Стили //
+
+.header
+	display: flex
+	text-align: left
+	&-img
+		background: url("../img/header.png") no-repeat center center
+		width: 908px
+		height: 715px
+	&-block
+		padding-top: 57px
+		padding-left: 54px
+		width: 458px
+		height: 715px
+		background-color: #f3f3f3
+		&__name, &__b, &__proj
+			margin-top: 10px
+			color: #262f32
+			font-size: 40px
+		&__name
+			margin-top: 64px
+			font-weight: 300
+		&__b
+			font-weight: 700
+		&__proj
+			font-weight: 400
+		&__desc
+			margin-top: 15px
+		&__desc, &__cont
+			margin-top: 44px
+			width: 327px
+			color: #262f32
+			font-size: 18px
+			font-weight: 400
+			line-height: 28px
+			letter-spacing: 0.62px
+	&-menu
+		width: 33px
+		height: 29px
+		opacity: 0.9
+.desc
+	display: flex
+	&-works
+		padding-top: 70px
+		padding-left: 63px
+		background: url("../img/desc-left.png")
+		width: 614px
+		height: 854px
+		color: #ffffff
+	&-best, &-dummy
+		padding-top: 70px
+		padding-left: 54px
+		width: 752px
+		height: 427px
+		&__btn
+			margin-top: 54px
+			width: 210px
+			height: 50px
+			background-color: transparent
+			font-size: 17px
+			font-weight: 400
+			letter-spacing: 0.5px
+			border-radius: 13px
+	&-best
+		background: url("../img/desc-right-1.png")
+		&__btn
+			border: 1px solid #262f32
+			color: #262f32
+
+
+	&-dummy
+		background: url("../img/desc-right-2.png")
+		color: #ffffff
+		&__vdesc
+			opacity: 0.7
+		&__btn
+			border: 1px solid #ffffff
+			color: #ffffff
+
+
+.desc-works__sketch, .desc-works__design, .desc-works__prod,
+.desc-best__title, .desc-dummy__title
+	font-size: 45px
+	font-weight: 300
+	letter-spacing: 1.35px
+.desc-works__sdesc, .desc-works__ddesc, .desc-works__pdesc,
+.desc-best__bdesc, .desc-dummy__vdesc
+	margin-top: 37px
+	width: 460px
+	opacity: 0.88
+	font-size: 16px
+	font-weight: 400
+	line-height: 28px
+	letter-spacing: 0.47px
+.desc-works__design, .desc-works__prod
+	margin-top: 86px
+.desc-best
+	color: #262f32
+
+
+.footer
+	display: flex
+	&-webpage, &-callback
+		padding-top: 74px
+		&__title
+			color: #ffffff
+			font-size: 45px
+			font-weight: 300
+			letter-spacing: 1.35px
+
+	&-webpage
+		background: url("../img/footer-left.png")
+		width: 458px
+		height: 715px
+		padding-left: 48px
+		&__logo
+			margin-top: 257px
+		&__name
+			margin-top: 34px
+			color: #ffffff
+			font-size: 42px
+			font-weight: 700
+			letter-spacing: 1.26px
+
+		&__design
+			margin-top: 19px
+			color: #ffffff
+			font-size: 17px
+			font-weight: 400
+			letter-spacing: 0.5px
+
+	&-callback
+		background: url("../img/footer-right.png")
+		width: 908px
+		height: 715px
+		padding-left: 57px
+		&__ul
+			margin-top: 22px
+		&__li
+			display: inline-block
+			margin-right: 3px
+			width: 45px
+			height: 45px
+			-moz-transition: all 1s ease-out
+			-o-transition: all 1s ease-out
+			-webkit-transition: all 1s ease-out
+			&:hover
+				-webkit-transform: scale(1.1)
+				-moz-transform: scale(1.1)
+				-o-transform: scale(1.1)
+		&__end
+			margin-top: 49px
+			color: #ffffff
+			font-size: 17px
+			font-weight: 400
+			letter-spacing: 0.5px
+		&__connect
+			margin-top: 95px
+			color: #ffffff
+			font-size: 17px
+			font-weight: 400
+			line-height: 32px
+			letter-spacing: 0.5px
+		&__input
+			padding-left: 27px
+			color: #ffffff
+			margin-top: 50px
+			width: 302px
+			height: 55px
+			border: 1px solid #ffffff
+			background-color: transparent
+			border-radius: 13px
+			&::placeholder
+				color: #ffffff
+				font-size: 17px
+				font-weight: 400
+				line-height: 32px
+				letter-spacing: 0.5px
+			&:first-child
+				margin-right: 10px
+		&__textarea
+			padding-left: 27px
+			padding-top: 23px
+			margin-top: 15px
+			color: #ffffff
+			display: block
+			width: 617px
+			height: 159px
+			border: 1px solid #ffffff
+			border-radius: 13px
+			background-color: transparent
+			outline: none
+			resize: none
+			&::placeholder
+				color: #ffffff
+				font-size: 17px
+				font-weight: 400
+				letter-spacing: 0.5px
+// Адаптив //
+@import "media"
